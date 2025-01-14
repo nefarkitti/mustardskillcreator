@@ -6,27 +6,31 @@
     <title>Mustard Skill Creator</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="shortcut icon" href="mustard.png" type="image/png">
 </head>
 <body>
 
-    <div class="overlay" style="display: none;">
+    <div class="overlay" id="overlay" style="display: none;">
 
         <div class="cards">
 
             <div class="card">
                 <span class="title">UNITS</span>
-                <div class="content">
+                <div class="content" id="overlay-units">
                     hello
                 </div>
             </div>
             <div class="card">
                 <span class="title">SKILLS</span>
-                <div class="content">
+                <div class="content" id="overlay-skills">
                     hello
                 </div>
             </div>
 
         </div>
+
+        <button onclick="closeDatabase()">BACK</button>
 
     </div>
     
@@ -57,6 +61,13 @@
                     </div>
 
                     <textarea placeholder="This attack also..." name="" id="extra"></textarea>
+
+                    <div class="divider alt">
+                        <hr>
+                    </div>
+                    <div class="valueInput alt">
+                        <button onclick="openDatabase()">LOAD FROM DATABASE</button>
+                    </div>
 
                 </div>
             </div>
@@ -134,22 +145,29 @@
                             <input type="number" value="0" placeholder="TRNS" name="" id="poisontrn">
                         </div>
                     </div>
-                    
+
                     <div class="divider alt">
                         <hr>
                     </div>
                     <div class="valueInput alt">
-                        <button onclick="openLoad()">LOAD SKILL FROM DATABASE</button>
+                        <select id="unit-select">
+
+                        </select>
+                        <button onclick="saveSkill()">SAVE TO UNIT</button>
                     </div>
 
                 </div>
             </div>
             <div class="card">
-                <span class="title">VICTIM</span>
+                <span class="title">UNIT</span>
                 <div class="content">
 
                     <div class="valueInput">
-                        <span class="label">VICTIM HP</span>
+                        <span class="label">NAME</span>
+                        <input type="text" maxlength="20" placeholder="Jane Mustard" name="" id="victimname">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">HEALTH</span>
                         <span class="label">100</span>
                     </div>
                     <div class="valueInput">
@@ -203,9 +221,47 @@
                         <hr>
                     </div>
                     <div class="valueInput alt">
-                        <button onclick="openLoad()">LOAD UNIT FROM DATABASE</button>
+                        <button onclick="saveUnit()">SAVE TO DATABASE</button>
                     </div>
 
+                </div>
+            </div>
+
+            <div class="card">
+                <span class="title">INFO</span>
+                <div class="content">
+                    <p>
+
+                        The official mustard skill creator! You can load stats from existing units or from units 
+                        that you've created, as well as load skills from them!
+
+                        <br><br>
+
+                        Double click on a unit in the database to load the unit data, otherwise
+                        click on any skill to load it.
+
+                        <br><br>
+
+                        Copy creates an easy for me to import paste of the created skill.
+
+                        <br><br>
+
+                        External stats are not part of the skill itself, but part of the unit that will be
+                        using said skill.
+                    </p>
+                    <div class="divider">
+                        <hr>
+                        <span>UPDATES</span>
+                    </div>
+                    <p>
+                        <b>v1.1</b>
+                    </p>
+                    <ul>
+                        <li>Added saving/loading to the database for custom units/skills for ease of use</li>
+                        <li>Added a favicon</li>
+                        <li>Separated copying to clipboard and calculating so it isn't annoying</li>
+                        <li>Removed Pep-rat-tron from the database.</li>
+                    </ul>
                 </div>
             </div>
 
@@ -213,7 +269,9 @@
 
         <br>
 
-        <button onclick="calculate()">CALCULATE & COPY</button>
+        <div>
+            <button onclick="calculate()">CALCULATE</button><button onclick="createClipboardString()">COPY SKILL</button>
+        </div>
         <div style="margin-bottom: 10px;"></div>
         <div id="results">
 

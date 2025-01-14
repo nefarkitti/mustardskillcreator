@@ -39,10 +39,256 @@ const results = document.getElementById("results")
 
 const extra = document.getElementById("extra")
 
+const overlay = document.getElementById("overlay")
+
 const types = [corp, swge, soda, absr, minm]
 const typesres = [corpres, swgeres, sodares, absrres, minmres]
 
+let selectedUnit = ""
+let skillsShown = false
+let savedSkillsShown = false
 let total
+let enemyData
+
+let savedEnemyData = []
+
+axios.get('enemies.json').then(res => {
+    let jsonData = res.data // should be json by default
+
+    enemyData = jsonData
+
+    console.log(jsonData)
+
+    /*setSkill(0,0)
+    skillsShown = true
+    loadSkills(0)*/
+
+}).catch(console.error)
+
+function setSkill(unitIndex, skillIndex) {
+
+    let unit = enemyData[unitIndex]
+    let skill = unit.skills[skillIndex]
+
+    skillName.value = skill.name
+
+    attackPower.value = unit.attackpower
+
+    baseDamage.value = skill.basedamage
+    accuracy.value = skill.accuracy
+    targets.value = skill.targets
+    multihit.value = skill.multihit
+    revs.value = skill.revs
+    cooldown.value = skill.cooldown
+
+    corp.value = skill.corp
+    swge.value = skill.swge
+    soda.value = skill.soda
+    absr.value = skill.absr
+    minm.value = skill.minm
+
+    bleedpot.value = skill.bleedApplication.potency
+    bleedtrn.value = skill.bleedApplication.turns
+
+    poisonpot.value = skill.poisonApplication.potency
+    poisontrn.value = skill.poisonApplication.potency
+
+    closeDatabase()
+
+    calculate()
+
+}
+
+function setSavedSkill(unitIndex, skillIndex) {
+
+    let unit = savedEnemyData[unitIndex]
+    let skill = unit.skills[skillIndex]
+
+    skillName.value = skill.name
+
+    attackPower.value = unit.attackpower
+
+    baseDamage.value = skill.basedamage
+    accuracy.value = skill.accuracy
+    targets.value = skill.targets
+    multihit.value = skill.multihit
+    revs.value = skill.revs
+    cooldown.value = skill.cooldown
+
+    corp.value = skill.corp
+    swge.value = skill.swge
+    soda.value = skill.soda
+    absr.value = skill.absr
+    minm.value = skill.minm
+
+    bleedpot.value = skill.bleedApplication.potency
+    bleedtrn.value = skill.bleedApplication.turns
+
+    poisonpot.value = skill.poisonApplication.potency
+    poisontrn.value = skill.poisonApplication.potency
+
+    closeDatabase()
+
+    calculate()
+
+}
+
+function loadUnit(index) {
+
+    let unit = enemyData[index]
+
+        document.getElementById("victimname").value = unit.name
+
+        attackPower.value = unit.attackpower
+
+        defense.value = unit.defense
+        dodge.value = unit.dodge
+    
+        corpres.value = unit.corpres
+        swgeres.value = unit.swgeres
+        sodares.value = unit.sodares
+        absrres.value = unit.absrres
+        minmres.value = unit.minmres
+    
+        bleedres.value = unit.bleedres
+        poisonres.value = unit.poisonres
+
+        closeDatabase()
+
+        calculate()
+
+
+}
+function loadSavedUnit(index) {
+
+    let unit = savedEnemyData[index]
+
+        document.getElementById("victimname").value = unit.name
+
+        attackPower.value = unit.attackpower
+
+        defense.value = unit.defense
+        dodge.value = unit.dodge
+    
+        corpres.value = unit.corpres
+        swgeres.value = unit.swgeres
+        sodares.value = unit.sodares
+        absrres.value = unit.absrres
+        minmres.value = unit.minmres
+    
+        bleedres.value = unit.bleedres
+        poisonres.value = unit.poisonres
+
+        closeDatabase()
+
+        calculate()
+
+
+}
+
+function loadSkills(index) {
+
+    skillsShown = true
+    let skills = document.getElementById("overlay-skills")
+
+    skills.innerHTML = ``
+
+    let unit = enemyData[index]
+
+    for (let i = 0; i < unit.skills.length;i++) {
+
+        let skill = unit.skills[i]
+
+        skills.innerHTML += `
+        <div class="unit" onclick="setSkill(${index}, ${i})">
+        <span class="unit-name">${skill.name}</span>
+        </div>
+        `
+
+    }
+
+}
+
+function loadSavedSkills(index) {
+
+    savedSkillsShown = true
+    let skills = document.getElementById("overlay-skills")
+
+    skills.innerHTML = ``
+
+    let unit = savedEnemyData[index]
+
+    for (let i = 0; i < unit.skills.length;i++) {
+
+        let skill = unit.skills[i]
+
+        skills.innerHTML += `
+        <div class="unit" onclick="setSavedSkill(${index}, ${i})">
+        <span class="unit-name">${skill.name}</span>
+        </div>
+        `
+
+    }
+
+}
+
+function openDatabase() {
+
+    overlay.style.display = ``
+
+    let units = document.getElementById("overlay-units")
+    let skills = document.getElementById("overlay-skills")
+
+    skills.innerHTML = ``
+    skillsShown = false
+    savedSkillsShown = false
+
+    units.innerHTML = ``
+
+    for (let i = 0; i < enemyData.length;i++) {
+
+        let unit = enemyData[i]
+
+        units.innerHTML += `
+        <div class="unit" ondblclick="loadUnit(${i})" onclick="loadSkills(${i})">
+        <span class="unit-name">${unit.name}</span>
+        </div>
+        `
+
+
+    }
+
+    if (savedEnemyData.length >= 1) {
+
+        units.innerHTML += `
+                    <div class="divider">
+                        <hr>
+                        <span>SAVED</span>
+                    </div>
+        `
+
+        for (let i = 0; i < savedEnemyData.length;i++) {
+
+            let unit = savedEnemyData[i]
+    
+            units.innerHTML += `
+            <div class="unit"  ondblclick="loadSavedUnit(${i})" onclick="loadSavedSkills(${i})">
+            <span class="unit-name">${unit.name}</span>
+            </div>
+            `
+    
+        }
+
+    }
+
+}
+
+function closeDatabase() {
+
+    overlay.style.display = `none`
+    skillsShown = false
+
+}
 
 function janeDefault() {
 
@@ -134,7 +380,7 @@ function calculate() {
 
     console.log(finalDamage)
 
-    createClipboardString()
+    //createClipboardString(finalDamage)
 
 }
 
@@ -178,5 +424,146 @@ ${extra.value}
 
 }
 
-janeDefault()
-calculate()
+function updateSelect() {
+
+    const unitselect = document.getElementById("unit-select")
+
+    unitselect.innerHTML = ``
+
+    for (let i = 0;i<savedEnemyData.length;i++) {
+
+        unitselect.innerHTML += `
+        <option value="${i}">
+        ${savedEnemyData[i].name}
+        </option>
+        `
+        console.log("hi")
+
+    }
+
+}
+
+function saveUnit() {
+
+    let victimName = document.getElementById("victimname")
+
+    if (victimName.length <= 3) return;
+
+    let findClone = false
+
+    for (let i=0;i < savedEnemyData.length;i++) {
+
+        if (savedEnemyData[i].name == victimName.value) {
+            findClone = true
+            break
+        }
+
+    }
+    if (findClone == true) return;
+
+    savedEnemyData.push({
+
+        "name": victimName.value,
+
+        "defense": defense.value,
+        "dodge": dodge.value,
+
+        "attackpower": attackPower.value,
+        "accmod": accMod.value,
+
+        "corpres": corpres.value,
+        "swgeres": swgeres.value,
+        "sodares": sodares.value,
+        "absrres": absrres.value,
+        "minmres": minmres.value,
+
+        "bleedres": bleedres.value,
+        "poisonres": poisonres.value,
+
+        "skills": []
+
+    })
+
+    updateSelect()
+
+    saveEverything()
+
+}
+
+function saveSkill() {
+
+    const unitselect = document.getElementById("unit-select")
+
+    if (!unitselect.value) return;
+
+    if (skillName.value.length <= 3) return;
+
+    let dupe = false
+
+    for (let i=0;i<savedEnemyData[unitselect.value].skills.length;i++) {
+
+        if (savedEnemyData[unitselect.value].skills[i].name == skillName.value) {
+
+            dupe = true
+            break
+
+        }
+
+    }
+
+    if (dupe == true) return;
+
+    savedEnemyData[unitselect.value].skills.push({
+        "name": skillName.value,
+
+        "basedamage": baseDamage.value,
+        "accuracy": accuracy.value,
+        "targets": targets.value,
+        "multihit": multihit.value,
+        "revs": revs.value,
+        "cooldown": cooldown.value,
+
+        "corp": corp.value,
+        "swge": swge.value,
+        "soda": soda.value,
+        "absr": absr.value,
+        "minm": minm.value,
+
+        "bleedApplication": {
+            "potency": bleedpot.value,
+            "turns": bleedtrn.value
+        },
+        "poisonApplication": {
+            "potency": poisonpot.value,
+            "turns": poisontrn.value
+        },
+
+        "extra": extra.value
+    })
+
+    saveEverything()
+
+}
+
+function load() {
+
+    const getSave = localStorage.getItem("skillcreator_savedEnemyData");
+
+    try {
+
+        if (getSave != null) {
+            savedEnemyData = JSON.parse(getSave); // magic things!
+        }
+
+        updateSelect()
+        
+    } catch (e) {
+
+    }
+
+}
+function saveEverything() {
+    localStorage.setItem("skillcreator_savedEnemyData", JSON.stringify(savedEnemyData));
+}
+
+load()

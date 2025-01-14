@@ -199,6 +199,7 @@ textarea:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .overlay .card {
     background-color: black;
@@ -206,4 +207,67 @@ textarea:focus {
 .overlay .card .title {
     background-color: rgb(0, 0, 0);
     color: rgb(176, 176, 176);
+}
+
+.overlay .unit {
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay .unit:hover {
+    cursor: pointer;
+    background-color: #1b1b1b;
+}
+.overlay .card .divider hr {
+    border: 1px solid white;
+}
+#overlay-units {
+    height: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+#overlay-skills {
+    height: 500px;
+    overflow: auto;
+    min-width: 210px;
+}
+
+select {
+
+    width: 120px;
+    margin-right: 5px;
+
+    border: none;
+    background-color: #1a1a1a;
+    border: 2px solid #161616;
+    color: white;
+    border-radius: 5px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 5px;
+
+}
+
+.content p {
+    width: 300px;
+    color: rgb(176, 176, 176);
+    margin: 0;
+}
+.content ul {
+    width: 100%;
+    color: rgb(176, 176, 176);
+    margin: 0;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 280px;
+}
+.content ul li {
+    margin-bottom: 5px;
 }
