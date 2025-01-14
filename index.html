@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustard Skill Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <div class="overlay" style="display: none;">
+
+        <div class="cards">
+
+            <div class="card">
+                <span class="title">UNITS</span>
+                <div class="content">
+                    hello
+                </div>
+            </div>
+            <div class="card">
+                <span class="title">SKILLS</span>
+                <div class="content">
+                    hello
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <div class="main">
+
+        <div class="cards">
+
+            <div class="card">
+                <span class="title">EXTERNAL STATS</span>
+                <div class="content">
+                    
+                    <div class="valueInput">
+                        <span class="label">ATTACK POWER</span>
+                        <input type="number" value="1" placeholder="1" name="" id="attackpower">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">ACCURACY MOD</span>
+                        <input type="number" value="1" placeholder="0-1" name="" id="accmod">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">CRIT CHANCE</span>
+                        <input type="number" value="4" placeholder="0-1" name="" id="critchance">
+                    </div>
+
+                    <div class="divider">
+                        <hr>
+                        <span>EXTRA</span>
+                    </div>
+
+                    <textarea placeholder="This attack also..." name="" id="extra"></textarea>
+
+                </div>
+            </div>
+            <div class="card">
+                <span class="title">SKILL</span>
+                <div class="content">
+                    
+                    <div class="valueInput">
+                        <span class="label">NAME</span>
+                        <input type="text" maxlength="30" placeholder="ATTACK" name="" id="name">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">BASE DAMAGE</span>
+                        <input type="number" value="10" placeholder="#" name="" id="basedamage">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">ACCURACY</span>
+                        <input type="number" value="1" placeholder="0-1" name="" id="accuracy">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">TARGETS</span>
+                        <input type="number" placeholder="1-3" name="" id="targets">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">MULTI-HIT</span>
+                        <input type="number" value="1" placeholder="1" name="" id="multihit">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">REVS</span>
+                        <input type="number" placeholder="0-3" name="" id="revs">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">COOLDOWN</span>
+                        <input type="number" placeholder="TRNS" name="" id="cooldown">
+                    </div>
+                    <div class="divider">
+                        <hr>
+                        <span>TYPES</span>
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">CORP</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="corp">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">SWGE</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="swge">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">SODA</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="soda">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">ABSR</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="absr">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">MINM</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="minm">
+                    </div>
+                    <div class="divider">
+                        <hr>
+                        <span>STATUS EFFECTS</span>
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">BLEED</span>
+                        <div>
+                            <input type="number" value="0" placeholder="PTNC" name="" id="bleedpot">
+                            <input type="number" value="0" placeholder="TRNS" name="" id="bleedtrn">
+                        </div>
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">POISON</span>
+                        <div>
+                            <input type="number" value="0" placeholder="PTNC" name="" id="poisonpot">
+                            <input type="number" value="0" placeholder="TRNS" name="" id="poisontrn">
+                        </div>
+                    </div>
+                    
+                    <div class="divider alt">
+                        <hr>
+                    </div>
+                    <div class="valueInput alt">
+                        <button onclick="openLoad()">LOAD SKILL FROM DATABASE</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card">
+                <span class="title">VICTIM</span>
+                <div class="content">
+
+                    <div class="valueInput">
+                        <span class="label">VICTIM HP</span>
+                        <span class="label">100</span>
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">DEFENSE</span>
+                        <input type="number" value="1" placeholder="0-1" name="" id="defense">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">DODGE</span>
+                        <input type="number" placeholder="0-1" name="" id="dodge">
+                    </div>
+
+                    <div class="divider">
+                        <hr>
+                        <span>TYPES</span>
+                    </div>
+
+                    <div class="valueInput">
+                        <span class="label">CORP Res.</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="corpres">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">SWGE Res.</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="swgeres">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">SODA Res.</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="sodares">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">ABSR Res.</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="absrres">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">MINM Res.</span>
+                        <input type="number" value="0" placeholder="0-1" name="" id="minmres">
+                    </div>
+                    <div class="divider">
+                        <hr>
+                        <span>STATUS EFFECTS</span>
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">BLEED Res.</span>
+                        <input type="number" placeholder="0-1" name="" id="bleedres">
+                    </div>
+                    <div class="valueInput">
+                        <span class="label">POISON Res.</span>
+                        <input type="number" placeholder="0-1" name="" id="poisonres">
+                    </div>
+
+                    <div class="divider alt">
+                        <hr>
+                    </div>
+                    <div class="valueInput alt">
+                        <button onclick="openLoad()">LOAD UNIT FROM DATABASE</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+
+        <button onclick="calculate()">CALCULATE & COPY</button>
+        <div style="margin-bottom: 10px;"></div>
+        <div id="results">
+
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
