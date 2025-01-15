@@ -94,6 +94,14 @@ button:hover {
 .valueInput .label {
     font-weight: 900;
     color: #575757;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.valueInput .label img {
+    width: 20px;
+    margin-left: 10px;
+    image-rendering: pixelated;
 }
 .valueInput input {
     border: none;
@@ -281,4 +289,14 @@ select {
     font-size: 18px;
     margin-left: 10px;
     filter: opacity(50%);
+}
+
+.absurd {
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent !important;
+    background-clip: text;
+    background-image: url('rainbow.png');
+    -webkit-background-clip: text;
+    background-size: 100%;
 }
