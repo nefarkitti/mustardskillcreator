@@ -518,6 +518,7 @@ function saveUnit() {
 
         "bleedres": bleedres.value,
         "poisonres": poisonres.value,
+        "burnres": burnres.value,
 
         "skills": []
 
@@ -575,6 +576,10 @@ function saveSkill() {
         "poisonApplication": {
             "potency": poisonpot.value,
             "turns": poisontrn.value
+        },
+        "burnApplication": {
+            "potency": burnpot.value,
+            "turns": burntrn.value
         },
 
         "extra": extra.value
