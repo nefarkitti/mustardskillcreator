@@ -22,6 +22,8 @@ const bleedpot = document.getElementById("bleedpot")
 const bleedtrn = document.getElementById("bleedtrn")
 const poisonpot = document.getElementById("poisonpot")
 const poisontrn = document.getElementById("poisontrn")
+const burnpot = document.getElementById("burnpot")
+const burntrn = document.getElementById("burntrn")
 
 const defense = document.getElementById("defense")
 const dodge = document.getElementById("dodge")
@@ -34,6 +36,7 @@ const minmres = document.getElementById("minmres")
 
 const bleedres = document.getElementById("bleedres")
 const poisonres = document.getElementById("poisonres")
+const burnres = document.getElementById("burnres")
 
 const results = document.getElementById("results")
 
@@ -52,7 +55,7 @@ let enemyData
 
 let savedEnemyData = []
 
-axios.get('enemies.json').then(res => {
+axios.get('https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json').then(res => { //enemies.json
     let jsonData = res.data // should be json by default
 
     enemyData = jsonData
@@ -62,6 +65,8 @@ axios.get('enemies.json').then(res => {
     /*setSkill(0,0)
     skillsShown = true
     loadSkills(0)*/
+    loadUnit(0)
+    setSkill(0,0)
 
 }).catch(console.error)
 
@@ -72,7 +77,7 @@ function setSkill(unitIndex, skillIndex) {
 
     skillName.value = skill.name
 
-    attackPower.value = unit.attackpower
+   // attackPower.value = unit.attackpower
 
     baseDamage.value = skill.basedamage
     accuracy.value = skill.accuracy
@@ -91,7 +96,12 @@ function setSkill(unitIndex, skillIndex) {
     bleedtrn.value = skill.bleedApplication.turns
 
     poisonpot.value = skill.poisonApplication.potency
-    poisontrn.value = skill.poisonApplication.potency
+    poisontrn.value = skill.poisonApplication.turns
+
+    burnpot.value = skill.burnApplication.potency
+    burntrn.value = skill.burnApplication.turns
+
+    extra.value = skill.extra
 
     closeDatabase()
 
@@ -106,7 +116,7 @@ function setSavedSkill(unitIndex, skillIndex) {
 
     skillName.value = skill.name
 
-    attackPower.value = unit.attackpower
+   // attackPower.value = unit.attackpower
 
     baseDamage.value = skill.basedamage
     accuracy.value = skill.accuracy
@@ -125,7 +135,12 @@ function setSavedSkill(unitIndex, skillIndex) {
     bleedtrn.value = skill.bleedApplication.turns
 
     poisonpot.value = skill.poisonApplication.potency
-    poisontrn.value = skill.poisonApplication.potency
+    poisontrn.value = skill.poisonApplication.turns
+
+    burnpot.value = skill.burnApplication.potency
+    burntrn.value = skill.burnApplication.turns
+
+    extra.value = skill.extra
 
     closeDatabase()
 
@@ -139,10 +154,12 @@ function loadUnit(index) {
 
         document.getElementById("victimname").value = unit.name
 
-        attackPower.value = unit.attackpower
+       // attackPower.value = unit.attackpower
+       // accMod.value = unit.accmod
 
         defense.value = unit.defense
         dodge.value = unit.dodge
+       // critChance.value = unit.critchance
     
         corpres.value = unit.corpres
         swgeres.value = unit.swgeres
@@ -152,6 +169,7 @@ function loadUnit(index) {
     
         bleedres.value = unit.bleedres
         poisonres.value = unit.poisonres
+        burnres.value = unit.burnres
 
         closeDatabase()
 
@@ -165,7 +183,9 @@ function loadSavedUnit(index) {
 
         document.getElementById("victimname").value = unit.name
 
-        attackPower.value = unit.attackpower
+       // attackPower.value = unit.attackpower
+       // accMod.value = unit.accmod
+       // critChance.value = unit.critchance
 
         defense.value = unit.defense
         dodge.value = unit.dodge
@@ -178,6 +198,7 @@ function loadSavedUnit(index) {
     
         bleedres.value = unit.bleedres
         poisonres.value = unit.poisonres
+        burnres.value = unit.burnres
 
         closeDatabase()
 
@@ -321,6 +342,9 @@ function calculate() {
     if (poisonpot.value >= 1 && poisontrn.value == 0) {
         poisontrn.value = 1
     }
+    if (burnpot.value >= 1 && burntrn.value == 0) {
+        burntrn.value = 1
+    }
 
     let damage = baseDamage.value
     let finalDamage = 0
@@ -334,7 +358,7 @@ function calculate() {
 
         bleedDamage += Number(bleedPotency)
 
-        bleedPotency = Math.ceil(bleedPotency / 3)
+        bleedPotency = Math.ceil(bleedPotency / 2)
 
     }
 
@@ -348,6 +372,19 @@ function calculate() {
         poisonDamage += Number(poisonPotency)
 
         poisonPotency = Math.ceil(poisonPotency / 3)
+
+    }
+
+    let burnDamage = 0
+    let burnPotency = burnpot.value
+    let burnTurns = burntrn.value
+
+    for (let i = 0; i < burnTurns;i++) {
+
+
+        burnDamage += Number(burnPotency)
+
+        burnPotency = Math.ceil(burnPotency / 1.5)
 
     }
 
@@ -373,9 +410,10 @@ function calculate() {
 
     results.innerHTML = `
     <span>TOTAL DAMAGE</span>
-    <h1>${finalDamage} (${critDamage} CRIT)</h1>
-    <h3 class="bleed">+${bleedDamage} BLD total (${0}% chance to apply)</h3>
-    <h3 class="poison">+${poisonDamage} PSN total (${0}% chance to apply)</h3>
+    <h1>${finalDamage} (${critDamage} CRIT) <span class="smaller">(${Math.round((Math.round(((1-dodge.value) * accuracy.value)*100))*accMod.value)}% chance to land)</span></h1>
+    <h3 class="bleed">+${bleedDamage} BLD total (${Math.floor(bleedres.value*100)}% chance to apply)</h3>
+    <h3 class="poison">+${poisonDamage} PSN total (${Math.floor(poisonres.value*100)}% chance to apply)</h3>
+    <h3 class="burn">+${burnDamage} BRN total (${Math.floor(burnres.value*100)}% chance to apply)</h3>
     `
 
     console.log(finalDamage)
@@ -448,6 +486,7 @@ function saveUnit() {
     let victimName = document.getElementById("victimname")
 
     if (victimName.length <= 3) return;
+    if (victimName.length <= 0) return;
 
     let findClone = false
 

@@ -8,6 +8,7 @@
 
         "attackpower": 1,
         "accmod": 1,
+        "critchance": 0.04,
 
         "corpres": 1.3,
         "swgeres": 1,
@@ -17,11 +18,12 @@
 
         "bleedres": 0.9,
         "poisonres": 1,
+        "burnres": 0.8,
 
         "skills": [
 
             {
-                "name": "ATTACK",
+                "name": "Attack",
 
                 "basedamage": 25,
                 "accuracy": 1,
@@ -44,11 +46,562 @@
                     "potency": 0,
                     "turns": 0
                 },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
 
-                "extra": "hey"
+                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)"
+            },
+
+            {
+                "name": "Rat Poison",
+
+                "basedamage": 5,
+                "accuracy": 0.75,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0.1,
+                "soda": 1,
+                "absr": 0.5,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 10,
+                    "turns": 3
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)"
             }
 
         ]
+
+    },
+
+    {
+
+        "name": "Burning Wizard",
+
+        "defense": 1.2,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 0.9,
+        "critchance": 0.01,
+
+        "corpres": 1.5,
+        "swgeres": 0.5,
+        "sodares": 0.8,
+        "absrres": -0.5,
+        "minmres": 1.5,
+
+        "bleedres": 0.75,
+        "poisonres": 0.3,
+        "burnres": 0,
+
+        "skills": [
+
+            {
+                "name": "Fireball",
+
+                "basedamage": 10,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0.5,
+                "soda": 0.25,
+                "absr": 1.5,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 15,
+                    "turns": 3
+                },
+
+                "extra": "Rolls 8 d6s to determine final damage."
+            },
+
+            {
+                "name": "Flame Strike",
+
+                "basedamage": 30,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0.35,
+                "soda": 0.5,
+                "absr": 0.85,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+
+                "extra": ""
+            },
+
+            {
+                "name": "Immolation",
+
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Cannot be used until 'Fireball' has been used atleast 2 times, and 'Flame Strike' has been used atleast once. Cannot be used again until 'Flaming Sphere' has been used. Buffs attck power and crit chance for the rest of the fight."
+            },
+
+            {
+                "name": "Cauterise",
+
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Remove all status effects. Heal self for 10-20 HP. Applies static 5/5 Burn on self."
+            },
+
+            {
+                "name": "Flaming Sphere",
+
+                "basedamage": 30,
+                "accuracy": 1.5,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 1,
+
+                "corp": 0,
+                "swge": 0.5,
+                "soda": 0.25,
+                "absr": 2,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 7,
+                    "turns": 6
+                },
+
+                "extra": "Usable once after an immolation has been used."
+            },
+
+            {
+                "name": "Scorching Ray",
+
+                "basedamage": 30,
+                "accuracy": 0.95,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 1,
+
+                "corp": 0,
+                "swge": 1,
+                "soda": 0.8,
+                "absr": 1.5,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 10,
+                    "turns": 8
+                },
+
+                "extra": "Must use 'Flaming Sphere' atleast 2 times before using this."
+            }
+
+        ]
+
+    },
+
+    {
+
+        "name": "Pepsi-Co Employee",
+
+        "defense": 1.1,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": -0.5,
+        "swgeres": 0.85,
+        "sodares": 0.5,
+        "absrres": 1.15,
+        "minmres": 0.1,
+
+        "bleedres": 0.6,
+        "poisonres": 0.8,
+        "burnres": 1,
+
+        "skills": [
+
+            {
+                "name": "Bleeding Edge",
+
+                "basedamage": 5,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 1.1,
+                "swge": 0,
+                "soda": 0.6,
+                "absr": 0.15,
+                "minm": 0.5,
+
+                "bleedApplication": {
+                    "potency": 15,
+                    "turns": 5
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Chance to apply 'Boredom'"
+            },
+
+            {
+                "name": "Make Hay",
+
+                "basedamage": 10,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 1,
+                "swge": 0,
+                "soda": 0.3,
+                "absr": 0,
+                "minm": 0.4,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Small chance to apply 'Boredom' on self"
+            },
+
+            {
+                "name": "Performance Review",
+
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Heals self by 5-10 HP, buffs attack power and accuracy by 10% and has a smaller chance to inflict 'Boredom' on self."
+            },
+
+            {
+                "name": "Backburner",
+
+                "basedamage": 20,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 0,
+
+                "corp": 1,
+                "swge": 0,
+                "soda": 0.2,
+                "absr": 0,
+                "minm": 0.8,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+
+                "extra": "Increased chance to apply 'Boredom' on self."
+            },
+
+            {
+                "name": "Blue Sky Thinking",
+
+                "basedamage": 30,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 2,
+                "cooldown": 1,
+
+                "corp": 1,
+                "swge": 0,
+                "soda": 0.5,
+                "absr": 0.05,
+                "minm": 0.5,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Only usable when in 'Boredom' state. Can only be used once per unit. Sets the target's 'CORP' resistance to 'FATAL' (2). Chance to apply 'Boredom'."
+            }
+
+        ]
+
+    },
+
+    {
+
+        "name": "Sewer Rat",
+
+        "defense": 1.5,
+        "dodge": 0.35,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1.5,
+        "swgeres": 0.05,
+        "sodares": 0.2,
+        "absrres": 0.5,
+        "minmres": 0.85,
+
+        "bleedres": 0.1,
+        "poisonres": 0.8,
+        "burnres": 0.2,
+
+        "skills": [
+
+            {
+                "name": "Scratch",
+
+                "basedamage": 10,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 1.2,
+                "soda": 0,
+                "absr": 0.6,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 5,
+                    "turns": 5
+                },
+                "poisonApplication": {
+                    "potency": 10,
+                    "turns": 5
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)"
+            }
+
+        ]
+
+    },
+
+    {
+
+        "name": "Pepsi-Ratt-o-tron",
+
+        "defense": 0.35,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 2,
+        "critchance": 0.04,
+
+        "corpres": 0.05,
+        "swgeres": 0,
+        "sodares": 0.5,
+        "absrres": 0.8,
+        "minmres": 0.1,
+
+        "bleedres": 0,
+        "poisonres": 0,
+        "burnres": 0.15,
+
+        "skills": []
+
+    },
+
+    {
+
+        "name": "Test Dummy",
+
+        "defense": 1,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": []
 
     }
 ]

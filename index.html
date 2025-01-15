@@ -145,6 +145,13 @@
                             <input type="number" value="0" placeholder="TRNS" name="" id="poisontrn">
                         </div>
                     </div>
+                    <div class="valueInput">
+                        <span class="label">BURN</span>
+                        <div>
+                            <input type="number" value="0" placeholder="PTNC" name="" id="burnpot">
+                            <input type="number" value="0" placeholder="TRNS" name="" id="burntrn">
+                        </div>
+                    </div>
 
                     <div class="divider alt">
                         <hr>
@@ -159,7 +166,7 @@
                 </div>
             </div>
             <div class="card">
-                <span class="title">UNIT</span>
+                <span class="title">TARGET UNIT</span>
                 <div class="content">
 
                     <div class="valueInput">
@@ -216,6 +223,10 @@
                         <span class="label">POISON Res.</span>
                         <input type="number" placeholder="0-1" name="" id="poisonres">
                     </div>
+                    <div class="valueInput">
+                        <span class="label">BURN Res.</span>
+                        <input type="number" placeholder="0-1" name="" id="burnres">
+                    </div>
 
                     <div class="divider alt">
                         <hr>
@@ -254,13 +265,16 @@
                         <span>UPDATES</span>
                     </div>
                     <p>
-                        <b>v1.1</b>
+                        <b>v1.2</b>
                     </p>
                     <ul>
-                        <li>Added saving/loading to the database for custom units/skills for ease of use</li>
-                        <li>Added a favicon</li>
-                        <li>Separated copying to clipboard and calculating so it isn't annoying</li>
-                        <li>Removed Pep-rat-tron from the database.</li>
+                        <li>Added new units: Burning Wizard, Pepsi-Co Employee, Sewer Rat, Test Dummy</li>
+                        <li>Added a new customisable status effect: Burn</li>
+                        <li>Updated status effect ticks so that: <br>
+                        Bleed potency is / 2 every turn, <br>
+                        Poison potency is / 3 every turn, <br>
+                        Burn potency is / 1.5 every turn. <br></li>
+                        <li>Fixed a couple other issues</li>
                     </ul>
                 </div>
             </div>
