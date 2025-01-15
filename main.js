@@ -406,6 +406,8 @@ function calculate() {
 
     }
 
+    //finalDamage = Math.ceil(damage * defense.value)
+
     let critDamage = finalDamage * 2
 
     results.innerHTML = `
