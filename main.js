@@ -55,7 +55,7 @@ let enemyData
 
 let savedEnemyData = []
 
-axios.get('https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json').then(res => { //enemies.json
+axios.get('https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json').then(res => { //https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json
     let jsonData = res.data // should be json by default
 
     enemyData = jsonData
@@ -389,24 +389,24 @@ function calculate() {
     }
 
 
-    damage = Math.ceil(damage * attackPower.value)
-    damage = Math.ceil(damage * defense.value)
+    let damage3 = Math.round(Math.ceil(damage * attackPower.value) * defense.value)
 
-    finalDamage = damage
+    //finalDamage = damage
 
     for (let i = 0; i < 5; i++) {
         
         let type = types[i]
         let typeres = typesres[i]
 
-        let typeDamage = Math.ceil(damage * type.value)
-        let resistanceDamage = Math.ceil(typeDamage * typeres.value)
+        let typeDamage = damage3 * ((type.value * 1) * ((typeres.value * 1) - 1))
 
-        finalDamage += resistanceDamage
+        finalDamage += typeDamage
 
     }
 
     //finalDamage = Math.ceil(damage * defense.value)
+
+    finalDamage += damage3
 
     let critDamage = finalDamage * 2
 

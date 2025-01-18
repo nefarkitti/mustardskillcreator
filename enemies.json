@@ -12,8 +12,8 @@
 
         "corpres": 1.3,
         "swgeres": 1,
-        "sodares": 0.5,
-        "absrres": 0.8,
+        "sodares": 1,
+        "absrres": 1,
         "minmres": 1.15,
 
         "bleedres": 0.9,
@@ -102,9 +102,9 @@
         "critchance": 0.01,
 
         "corpres": 1.5,
-        "swgeres": 0.5,
-        "sodares": 0.8,
-        "absrres": -0.5,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
         "minmres": 1.5,
 
         "bleedres": 0.75,
@@ -320,11 +320,11 @@
         "accmod": 1,
         "critchance": 0.04,
 
-        "corpres": -0.5,
-        "swgeres": 0.85,
-        "sodares": 0.5,
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
         "absrres": 1.15,
-        "minmres": 0.1,
+        "minmres": 1,
 
         "bleedres": 0.6,
         "poisonres": 0.8,
@@ -508,10 +508,10 @@
         "critchance": 0.04,
 
         "corpres": 1.5,
-        "swgeres": 0.05,
-        "sodares": 0.2,
-        "absrres": 0.5,
-        "minmres": 0.85,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
 
         "bleedres": 0.1,
         "poisonres": 0.8,
@@ -566,11 +566,11 @@
         "accmod": 2,
         "critchance": 0.04,
 
-        "corpres": 0.05,
-        "swgeres": 0,
-        "sodares": 0.5,
-        "absrres": 0.8,
-        "minmres": 0.1,
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
 
         "bleedres": 0,
         "poisonres": 0,
