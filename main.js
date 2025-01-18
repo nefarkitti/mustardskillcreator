@@ -398,7 +398,7 @@ function calculate() {
         let type = types[i]
         let typeres = typesres[i]
 
-        let typeDamage = damage3 * ((type.value * 1) * ((typeres.value * 1) - 1))
+        let typeDamage = Math.round(damage3 * ((type.value * 1) * ((typeres.value * 1) - 1)))
 
         finalDamage += typeDamage
 
