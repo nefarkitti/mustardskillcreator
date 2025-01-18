@@ -453,6 +453,8 @@ module.info = {
     ["bleedtrn"] = ${bleedtrn.value},
     ["poisonpot"] = ${poisonpot.value},
     ["poisontrn"] = ${poisontrn.value},
+    ["burnpot"] = ${burnpot.value},
+    ["burntrn"] = ${burntrn.value},
 }
 
 --[[
