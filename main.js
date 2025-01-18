@@ -408,6 +408,8 @@ function calculate() {
 
     finalDamage += damage3
 
+    finalDamage = Math.round(finalDamage) // THIS IS FOR YOU 1NNING
+
     let critDamage = finalDamage * 2
 
     results.innerHTML = `
