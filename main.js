@@ -499,6 +499,27 @@ function saveUnit() {
     for (let i=0;i < savedEnemyData.length;i++) {
 
         if (savedEnemyData[i].name == victimName.value) {
+
+            let savedenemylol = savedEnemyData[i]
+
+            savedenemylol.name = victimName.value
+
+            savedenemylol.defense = defense.value
+            savedenemylol.dodge = dodge.value
+
+            savedenemylol.attackpower = attackPower.value
+            savedenemylol.accmod = accMod.value
+
+            savedenemylol.corpres = corpres.value
+            savedenemylol.swgeres = swgeres.value
+            savedenemylol.sodares = sodares.value
+            savedenemylol.absrres = absrres.value
+            savedenemylol.minmres = minmres.value
+
+            savedenemylol.bleedres = bleedres.value
+            savedenemylol.poisonres = poisonres.value
+            savedenemylol.burnres = burnres.value
+
             findClone = true
             break
         }
@@ -549,6 +570,38 @@ function saveSkill() {
     for (let i=0;i<savedEnemyData[unitselect.value].skills.length;i++) {
 
         if (savedEnemyData[unitselect.value].skills[i].name == skillName.value) {
+
+            let savedSkillData = savedEnemyData[unitselect.value].skills[i]
+
+            savedSkillData.name = skillName.value
+
+            savedSkillData.basedamage = baseDamage.value
+            savedSkillData.accuracy = accuracy.value
+            savedSkillData.targets = targets.value
+            savedSkillData.multihit = multihit.value
+            savedSkillData.revs = revs.value
+            savedSkillData.cooldown = cooldown.value
+
+            savedSkillData.corp = corp.value
+            savedSkillData.swge = swge.value
+            savedSkillData.soda = soda.value
+            savedSkillData.absr = absr.value
+            savedSkillData.minm = minm.value
+
+            savedSkillData.bleedApplication = {
+                "potency": bleedpot.value,
+                "turns": bleedtrn.value
+            },
+            savedSkillData.poisonApplication = {
+                "potency": poisonpot.value,
+                "turns": poisontrn.value
+            },
+            savedSkillData.burnApplication = {
+                "potency": burnpot.value,
+                "turns": burntrn.value
+            },
+
+            savedSkillData.extra = extra.value
 
             dupe = true
             break
