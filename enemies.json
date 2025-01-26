@@ -902,6 +902,380 @@
 
     {
 
+        "name": "Lucia",
+
+        "region": "BASE",
+
+        "defense": 1.1,
+        "dodge": 0.3,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1,
+        "swgeres": 1.5,
+        "sodares": 1.25,
+        "absrres": 0.3,
+        "minmres": 0.5,
+
+        "bleedres": 0.6,
+        "poisonres": 1,
+        "burnres": 0.7,
+
+        "skills": [
+
+            {
+                "name": "Warning shot",
+
+                "class":"ATTACK",
+                "spec":"absr",
+            
+                "basedamage": 15,
+                "accuracy": 2,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0.5,
+                "minm": 0.5,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Inflicts Wary (acc&atk down, dodge slightly up) guaranteed for 3 turns, always used on the first turn. Does not consume any of Lucia's ammo. "
+            },
+
+            {
+                "name": "Reload",
+
+                "class":"SUPPORT",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Returns ammo to 6, cannot dodge for the turn. Small chance to be rolled for use the turn after reloading, triggering Snake Eyes if that happens."
+            },
+
+            {
+                "name": "Snake Eyes",
+
+                "class":"SUPPORT",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Grants Snake Eyes to self (Buffs next 1 ammo move, dodge raised to 0.4, attack power lowered to 0.9 and acc mod raised to 1.3 while unspent)"
+            },
+
+            {
+                "name": "Fire!",
+
+                "class":"ATTACK",
+            
+                "basedamage": 25,
+                "accuracy": 0.9,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 1,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 1,
+            
+                "bleedApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Consumes 1 ammo, adds 8 bleed potency and 1 count while Lucia has Snake Eyes."
+            },
+
+            {
+                "name": "Precise Shot",
+
+                "class":"ATTACK",
+                "spec":"minm",
+            
+                "basedamage": 40,
+                "accuracy": 1.1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 3,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0.25,
+                "minm": 0.75,
+            
+                "bleedApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Consumes 1 ammo, base damage goes up to 55, doubled crit chance and consumes an extra ammo with Snake Eyes."
+            },
+
+            {
+                "name": "Precise Shot (Tempo Up)",
+
+                "class":"ATTACK",
+            
+                "basedamage": 33,
+                "accuracy": 0.95,
+                "targets": 1,
+                "multihit": 2,
+                "revs": 0,
+                "cooldown": 3,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0.5,
+                "minm": 0.5,
+            
+                "bleedApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "First shot has a small chance to inflict Incapacitated (mild all stats down) Has a higher crit chance than normal."
+            },
+
+            {
+                "name": "Fan The Hammer",
+
+                "class":"ATTACK",
+                "spec":"absr",
+            
+                "basedamage": 22,
+                "accuracy": 0.9,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 3,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0.75,
+                "minm": 0.25,
+            
+                "bleedApplication": {
+                    "potency": 8,
+                    "turns": 1
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Wastes all her ammo and deals multihit equal to ammo used. Reduced crit chance."
+            },
+
+            {
+                "name": "Fan The Hammer (Tempo Up)",
+
+                "class":"ATTACK",
+                "spec":"absr",
+            
+                "basedamage": 38,
+                "accuracy": 0.75,
+                "targets": 1,
+                "multihit": 4,
+                "revs": 0,
+                "cooldown": 3,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 1,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 10,
+                    "turns": 1
+                },
+            
+                "extra": "Every missed shot has a small chance to inflict Tensed up (Defense up, acc&attack&dodge down.), reduced burn chance."
+            },
+
+            {
+                "name": "Tipped Stabs ",
+
+                "class":"ATTACK",
+                "spec":"minm",
+            
+                "basedamage": 13,
+                "accuracy": 0.8,
+                "targets": 1,
+                "multihit": 2,
+                "revs": 0,
+                "cooldown": 3,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0.25,
+                "minm": 0.75,
+            
+                "bleedApplication": {
+                    "potency": 5,
+                    "turns": 1
+                },
+                "poisonApplication": {
+                    "potency": 10,
+                    "turns": 1
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Reduced chance to inflict debuffs on each individual hit. She will use this when at low or no ammo "
+            },
+
+            {
+                "name": "Up The Tempo!",
+
+                "class":"ATTACK",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Lucia will always use this move once she hits 30% hp. During Snake Eyes, her defense spikes down to 0.8, dodge becomes 0, attack power becomes 1.3, accuracy mod becomes 1, all resistances become 1.1 and she can no longer gain Snake Eyes. Ammo is set to a fixed 4. Fan the hammer and Precise Shot gain new properties."
+            }
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
