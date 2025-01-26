@@ -94,6 +94,8 @@
 
         "name": "Burning Wizard",
 
+        "region": "MISC",
+
         "defense": 1.2,
         "dodge": 0,
 
@@ -115,6 +117,8 @@
 
             {
                 "name": "Fireball",
+
+                "class": "ATTACK",
 
                 "basedamage": 15,
                 "accuracy": 0.9,
@@ -148,6 +152,8 @@
             {
                 "name": "Flame Strike",
 
+                "class": "ATTACK",
+
                 "basedamage": 45,
                 "accuracy": 1,
                 "targets": 1,
@@ -179,6 +185,8 @@
 
             {
                 "name": "Immolation",
+
+                "class": "SUPPORT",
 
                 "basedamage": 0,
                 "accuracy": 1,
@@ -212,6 +220,8 @@
             {
                 "name": "Cauterise",
 
+                "class": "SUPPORT",
+
                 "basedamage": 0,
                 "accuracy": 1,
                 "targets": 1,
@@ -244,6 +254,8 @@
             {
                 "name": "Flaming Sphere",
 
+                "class": "ATTACK",
+
                 "basedamage": 45,
                 "accuracy": 1.5,
                 "targets": 1,
@@ -275,6 +287,8 @@
 
             {
                 "name": "Scorching Ray",
+
+                "class": "ATTACK",
 
                 "basedamage": 75,
                 "accuracy": 0.95,
@@ -313,6 +327,8 @@
 
         "name": "Pepsi-Co Employee",
 
+        "region": "PEPSI-CO",
+
         "defense": 1.1,
         "dodge": 0,
 
@@ -334,6 +350,8 @@
 
             {
                 "name": "Bleeding Edge",
+
+                "class": "ATTACK",
 
                 "basedamage": 5,
                 "accuracy": 1,
@@ -367,6 +385,8 @@
             {
                 "name": "Make Hay",
 
+                "class": "ATTACK",
+
                 "basedamage": 10,
                 "accuracy": 1,
                 "targets": 1,
@@ -398,6 +418,8 @@
 
             {
                 "name": "Performance Review",
+
+                "class": "SUPPORT",
 
                 "basedamage": 0,
                 "accuracy": 1,
@@ -431,6 +453,8 @@
             {
                 "name": "Backburner",
 
+                "class": "ATTACK",
+
                 "basedamage": 20,
                 "accuracy": 1,
                 "targets": 1,
@@ -462,6 +486,8 @@
 
             {
                 "name": "Blue Sky Thinking",
+
+                "class": "ATTACK",
 
                 "basedamage": 30,
                 "accuracy": 1,
@@ -500,6 +526,8 @@
 
         "name": "Sewer Rat",
 
+        "region": "RATS",
+
         "defense": 1.5,
         "dodge": 0.35,
 
@@ -521,6 +549,8 @@
 
             {
                 "name": "Scratch",
+
+                "class": "ATTACK",
 
                 "basedamage": 10,
                 "accuracy": 1,
@@ -559,6 +589,8 @@
 
         "name": "Pepsi-Ratt-o-tron",
 
+        "region": "RATS",
+
         "defense": 0.35,
         "dodge": 0,
 
@@ -583,6 +615,8 @@
     {
 
         "name": "Test Dummy",
+
+        "region": "MISC",
 
         "defense": 1,
         "dodge": 0,
