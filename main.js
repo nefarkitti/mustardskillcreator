@@ -55,7 +55,7 @@ let enemyData
 
 let savedEnemyData = []
 
-axios.get('https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json').then(res => { //https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json
+axios.get('enemies.json').then(res => { //https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json
     let jsonData = res.data // should be json by default
 
     enemyData = jsonData
@@ -423,6 +423,50 @@ function calculate() {
     console.log(finalDamage)
 
     //createClipboardString(finalDamage)
+
+}
+
+function createClipboardJSON() {
+
+    let json = `
+\`\`\`json
+
+{
+    "name": "${skillName.value}",
+
+    "basedamage": ${baseDamage.value},
+    "accuracy": ${accuracy.value},
+    "targets": ${targets.value},
+    "multihit": ${multihit.value},
+    "revs": ${revs.value},
+    "cooldown": ${cooldown.value},
+
+    "corp": ${corp.value},
+    "swge": ${swge.value},
+    "soda": ${soda.value},
+    "absr": ${absr.value},
+    "minm": ${minm.value},
+
+    "bleedApplication": {
+        "potency": ${bleedpot.value},
+        "turns": ${bleedtrn.value}
+    },
+    "poisonApplication": {
+        "potency": ${poisonpot.value},
+        "turns": ${poisontrn.value}
+    },
+    "burnApplication": {
+        "potency": ${burnpot.value},
+        "turns": ${burntrn.value}
+    },
+
+    "extra": "${extra.value}"
+},
+
+\`\`\`
+`
+
+    navigator.clipboard.writeText(json)
 
 }
 

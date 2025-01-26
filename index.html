@@ -265,11 +265,12 @@
                         <span>UPDATES</span>
                     </div>
                     <p>
-                        <b>v1.31</b>
+                        <b>v1.4</b>
                     </p>
                     <ul>
-                        <li>new damage calculation</li>
-                        <li>fixed rounding</li>
+                        <li>moved buttons around</li>
+                        <li>reworked some units</li>
+                        <li>added copy json</li>
                     </ul>
                 </div>
             </div>
@@ -278,8 +279,13 @@
 
         <br>
 
-        <div>
-            <button onclick="calculate()">CALCULATE</button><button onclick="createClipboardString()">COPY SKILL</button>
+        <div class="buttons">
+            <div>
+                <button onclick="calculate()" class="calc">CALCULATE</button>
+            </div>
+            <div>
+                <button onclick="createClipboardString()">COPY LUA</button><button onclick="createClipboardJSON()">COPY JSON</button>
+            </div>
         </div>
         <div style="margin-bottom: 10px;"></div>
         <div id="results">

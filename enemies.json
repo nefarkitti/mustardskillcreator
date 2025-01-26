@@ -10,11 +10,11 @@
         "accmod": 1,
         "critchance": 0.04,
 
-        "corpres": 1.3,
+        "corpres": 1.75,
         "swgeres": 1,
-        "sodares": 1,
-        "absrres": 1,
-        "minmres": 1.15,
+        "sodares": 0.4,
+        "absrres": 0.6,
+        "minmres": 1.5,
 
         "bleedres": 0.9,
         "poisonres": 1,
@@ -101,10 +101,10 @@
         "accmod": 0.9,
         "critchance": 0.01,
 
-        "corpres": 1.5,
-        "swgeres": 1,
+        "corpres": 1.8,
+        "swgeres": 0.6,
         "sodares": 1,
-        "absrres": 1,
+        "absrres": 0,
         "minmres": 1.5,
 
         "bleedres": 0.75,
@@ -116,17 +116,17 @@
             {
                 "name": "Fireball",
 
-                "basedamage": 10,
-                "accuracy": 1,
+                "basedamage": 15,
+                "accuracy": 0.9,
                 "targets": 1,
                 "multihit": 1,
                 "revs": 0,
                 "cooldown": 0,
 
                 "corp": 0,
-                "swge": 0.5,
-                "soda": 0.25,
-                "absr": 1.5,
+                "swge": 0.1,
+                "soda": 0.2,
+                "absr": 0.7,
                 "minm": 0,
 
                 "bleedApplication": {
@@ -138,17 +138,17 @@
                     "turns": 0
                 },
                 "burnApplication": {
-                    "potency": 15,
+                    "potency": 10,
                     "turns": 3
                 },
 
-                "extra": "Rolls 8 d6s to determine final damage."
+                "extra": "Flip a coin until you get tails. For each heads, this skill attacks one more time (max 7 times). Extra attacks do not apply additional Burn count."
             },
 
             {
                 "name": "Flame Strike",
 
-                "basedamage": 30,
+                "basedamage": 45,
                 "accuracy": 1,
                 "targets": 1,
                 "multihit": 1,
@@ -156,8 +156,8 @@
                 "cooldown": 0,
 
                 "corp": 0,
-                "swge": 0.35,
-                "soda": 0.5,
+                "swge": 0.1,
+                "soda": 0.05,
                 "absr": 0.85,
                 "minm": 0,
 
@@ -206,7 +206,7 @@
                     "turns": 0
                 },
 
-                "extra": "Cannot be used until 'Fireball' has been used atleast 2 times, and 'Flame Strike' has been used atleast once. Cannot be used again until 'Flaming Sphere' has been used. Buffs attck power and crit chance for the rest of the fight."
+                "extra": "Cannot be used until 'Fireball' has been used atleast 2 times, and 'Flame Strike' has been used atleast once. Cannot be used again until 'Flaming Sphere' has been used. Buffs attack power and crit chance for the rest of the fight."
             },
 
             {
@@ -244,7 +244,7 @@
             {
                 "name": "Flaming Sphere",
 
-                "basedamage": 30,
+                "basedamage": 45,
                 "accuracy": 1.5,
                 "targets": 1,
                 "multihit": 1,
@@ -252,9 +252,9 @@
                 "cooldown": 1,
 
                 "corp": 0,
-                "swge": 0.5,
-                "soda": 0.25,
-                "absr": 2,
+                "swge": 0,
+                "soda": 0,
+                "absr": 1,
                 "minm": 0,
 
                 "bleedApplication": {
@@ -266,7 +266,7 @@
                     "turns": 0
                 },
                 "burnApplication": {
-                    "potency": 7,
+                    "potency": 12,
                     "turns": 6
                 },
 
@@ -276,7 +276,7 @@
             {
                 "name": "Scorching Ray",
 
-                "basedamage": 30,
+                "basedamage": 75,
                 "accuracy": 0.95,
                 "targets": 1,
                 "multihit": 1,
@@ -284,9 +284,9 @@
                 "cooldown": 1,
 
                 "corp": 0,
-                "swge": 1,
-                "soda": 0.8,
-                "absr": 1.5,
+                "swge": 0.3,
+                "soda": 0.3,
+                "absr": 0.3,
                 "minm": 0,
 
                 "bleedApplication": {
@@ -298,11 +298,11 @@
                     "turns": 0
                 },
                 "burnApplication": {
-                    "potency": 10,
+                    "potency": 12,
                     "turns": 8
                 },
 
-                "extra": "Must use 'Flaming Sphere' atleast 2 times before using this."
+                "extra": "Must use 'Flaming Sphere' atleast 2 times before using this. Bypasses defense."
             }
 
         ]
