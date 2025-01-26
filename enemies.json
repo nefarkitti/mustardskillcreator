@@ -1276,6 +1276,69 @@
 
     {
 
+        "name": "Big Scary Bear",
+
+        "region": "MISC",
+
+        "defense": 0.5,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 5,
+        "critchance": 1,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 0,
+        "poisonres": 0,
+        "burnres": 0,
+
+        "skills": [
+
+            {
+                "name": "Claws At You",
+
+                "class":"ATTACK",
+            
+                "basedamage": 500,
+                "accuracy": 10,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 1,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 25,
+                    "turns": 3
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "This attack deals 0 damage against targets that aren't 'flowerssmoke' or 'Violet'."
+            }
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
