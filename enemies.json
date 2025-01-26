@@ -3,6 +3,8 @@
 
         "name": "Jane",
 
+        "region": "BASE",
+
         "defense": 0.8,
         "dodge": 0.1,
 
