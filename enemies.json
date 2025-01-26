@@ -1239,7 +1239,7 @@
             {
                 "name": "Up The Tempo!",
 
-                "class":"ATTACK",
+                "class":"SUPPORT",
             
                 "basedamage": 0,
                 "accuracy": 1,
