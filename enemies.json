@@ -630,6 +630,278 @@
 
     {
 
+        "name": "Manager",
+
+        "region": "PEPSI-CO",
+
+        "defense": 0.8,
+        "dodge": 0.15,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 0.2,
+        "swgeres": 0.75,
+        "sodares": 1,
+        "absrres": 1.5,
+        "minmres": 0.2,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+            {
+                "name": "Touch Base",
+
+                "class": "ATTACK",
+                "spec": "corp",
+            
+                "basedamage": 10,
+                "accuracy": 1.2,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0.9,
+                "swge": 0,
+                "soda": 0.1,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Reduces the target's Bleed Resistance by 0.1"
+            },
+
+            {
+                "name": "Circle Back",
+
+                "class": "ATTACK",
+                "spec": "corp",
+            
+                "basedamage": 15,
+                "accuracy": 0.9,
+                "targets": 1,
+                "multihit": 2,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0.6,
+                "swge": 0,
+                "soda": 0.2,
+                "absr": 0,
+                "minm": 0.2,
+            
+                "bleedApplication": {
+                    "potency": 8,
+                    "turns": 1
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": ""
+            },
+
+            {
+                "name": "Deep Dive",
+
+                "class": "ATTACK",
+                "spec":"corp",
+                
+                "basedamage": 20,
+                "accuracy": 0.9,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 2,
+                "cooldown": 5,
+            
+                "corp": 0.6,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0.4,
+            
+                "bleedApplication": {
+                    "potency": 18,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Raises self Attack Power by 0.2. Raises self Defense by 0.1. Small chance to apply 'Boredom'. Uses new skills for 3 turns (+1 per use)."
+            },
+
+            {
+                "name": "Brain Dump",
+
+                "class":"ATTACK",
+                "spec":"minm",
+            
+                "basedamage": 15,
+                "accuracy": 1.5,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 0,
+            
+                "corp": 0.25,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0.75,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Usable for X turns after 'Deep Dive'. Great chance to apply 'Boredom'. If missed, raise self Accuracy by 0.1. If dodged, reduce target's Dodge by 0.02. On hit, raise target's MINM Res. by 0.02."
+            },
+
+            {
+                "name": "Game Changer",
+
+                "class": "ATTACK",
+                "spec": "corp",
+            
+                "basedamage": 50,
+                "accuracy": 1.1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 3,
+            
+                "corp": 0.5,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0.5,
+            
+                "bleedApplication": {
+                    "potency": 20,
+                    "turns": 1
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Usable for X turns after 'Deep Dive'. Ignores target Defense."
+            },
+
+            {
+                "name": "Rain Check",
+
+                "class":"SUPPORT",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 3,
+                "cooldown": 4,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Usable for X turns after 'Deep Dive'. Summons a weakened Pepsi-Co Employee (All TYPE Res. raised by 0.75, Defense set to 2, Health set to 75) (Max 1). If Pepsi-Co Employee is already on the field, use 'Leverage' instead."
+            },
+
+            {
+                "name": "Leverage",
+
+                "class": "SUPPORT",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Kill Remaining Ally to buff self. Heal HP by (Remaining Ally HP) x 0.6. If self Accuracy is < 1, raise to 1.1. Lower self Defense by 0.1. Reduce 'Deep Dive' Cooldown by 1. Reduce all Status Effect Res. by 0.3."
+            }
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
