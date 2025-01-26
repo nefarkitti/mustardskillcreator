@@ -55,7 +55,7 @@ let enemyData
 
 let savedEnemyData = []
 
-axios.get('enemies.json').then(res => { //https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json
+axios.get('https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json').then(res => { //https://raw.githubusercontent.com/nefarkitti/mustardskillcreator/refs/heads/main/enemies.json
     let jsonData = res.data // should be json by default
 
     enemyData = jsonData
