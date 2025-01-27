@@ -1339,6 +1339,345 @@
 
     {
 
+        "name": "Sword Descent Hooligan",
+
+        "region": "SWORD DESCENT",
+
+        "note": "nothing to say",
+        "behaviour":"Always uses 'Draw Blade' as the first skill. Crits deal 2.5x more damage instead of 2x.",
+
+        "defense": 1.2,
+        "dodge": 0.17,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.06,
+
+        "corpres": 0.5,
+        "swgeres": 0.7,
+        "sodares": 0.4,
+        "absrres": 1.5,
+        "minmres": 0.3,
+
+        "bleedres": 0.1,
+        "poisonres": 0.6,
+        "burnres": 0.4,
+
+        "skills": [
+
+            {
+                "name": "Draw Blade",
+
+                "class":"ATTACK",
+                "spec":"soda",
+            
+                "basedamage": 25,
+                "accuracy": 1.2,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 1,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Raise Base Damage by 5 for every 10 Bleed Potency on target."
+            },
+
+            {
+                "name": "Acupuncture",
+
+                "class":"ATTACK",
+                "spec":"soda",
+            
+                "basedamage": 35,
+                "accuracy": 1.1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0.55,
+                "absr": 0.45,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 15,
+                    "turns": 1
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Increase Crit Chance of this skill by 0.04 for every 10 Bleed Potency on target."
+            },
+
+            {
+                "name": "Slay",
+
+                "class":"ATTACK",
+                "spec":"soda",
+            
+                "basedamage": 35,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 1,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0.5,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 5,
+                    "turns": 5
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Raises target's Defense by 0.1 for this Skill."
+            }
+
+        ]
+
+    },
+
+    {
+
+        "name": "Sword Descent Master",
+
+        "region": "SWORD DESCENT",
+
+        "note": "nothing to say",
+        "behaviour":"Always uses 'Draw Blade' as the first skill. Crits deal 3x more damage instead of 2x. Uses 'Sword Descent Technique 3: Counter' every 3 turns. After recovering from Paralysis, recover 10 HP and set Defense back to 0.9 (+0.1 per recovery)",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+            {
+                "name": "Draw Blade",
+
+                "class":"ATTACK",
+                "spec":"soda",
+            
+                "basedamage": 25,
+                "accuracy": 1.2,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 1,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 10,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Raise Base Damage by 5 for every 10 Bleed Potency on target."
+            },
+
+            {
+                "name": "Sword Descent Technique 1: Puncture",
+
+                "class":"ATTACK",
+                "spec":"soda",
+            
+                "basedamage": 40,
+                "accuracy": 1.1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0.55,
+                "absr": 0.45,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 20,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Increase Crit Chance of this skill by 0.04 for every 8 Bleed Potency on target."
+            },
+
+            {
+                "name": "Sword Descent Technique 2: Slay",
+
+                "class":"ATTACK",
+            
+                "basedamage": 30,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 1,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 8,
+                    "turns": 3
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Raises target's Defense by 0.2 for this Skill."
+            },
+
+            {
+                "name": "Sword Descent Technique 3: Counter",
+
+                "class":"SUPPORT",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 8,
+                    "turns": 3
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "If hit during this turn, use 'Blossom' next turn."
+            },
+
+            {
+                "name": "Blossom",
+            
+                "basedamage": 70,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 12,
+                    "turns": 3
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "This Skill cannot Crit. Raise target's Defense by 0.1 for this Skill. Become Paralysed and set self Defense to 0.5 for a turn after this Skill. If there are 'Sword Descent' Allies, raise their Attack Power by 0.25."
+            }
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
