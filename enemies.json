@@ -1476,7 +1476,7 @@
 
     {
 
-        "name": "Sword Descent Master",
+        "name": "Master Jim",
 
         "region": "SWORD DESCENT",
 
@@ -1607,7 +1607,7 @@
             },
 
             {
-                "name": "Sword Descent Technique 3: Counter",
+                "name": "Sword Descent Technique 3: Take Your Bones",
 
                 "class":"SUPPORT",
             
@@ -1637,11 +1637,11 @@
                     "turns": 0
                 },
             
-                "extra": "If hit during this turn, use 'Blossom' next turn."
+                "extra": "If hit during this turn, use 'Sanguine Floret Blossom' next turn."
             },
 
             {
-                "name": "Blossom",
+                "name": "Sanguine Floret Blossom",
             
                 "basedamage": 70,
                 "accuracy": 1,
