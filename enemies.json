@@ -1860,7 +1860,7 @@
 
     {
 
-        "name": "Test Dummy",
+        "name": "TBN",
 
         "region": "MISC",
 
@@ -1883,40 +1883,34 @@
 
         "skills": [
 
-            {
-                "name": "Attack",
+        ]
 
-                "class": "ATTACK",
-                "spec": "",
+    },
 
-                "basedamage": 25,
-                "accuracy": 1,
-                "targets": 1,
-                "multihit": 1,
-                "revs": 0,
-                "cooldown": 0,
+    {
 
-                "corp": 0,
-                "swge": 0,
-                "soda": 0,
-                "absr": 0,
-                "minm": 0,
+        "name": "Test Dummy",
 
-                "bleedApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "poisonApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "burnApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
+        "region": "MISC",
 
-                "extra": "template"
-            }
+        "defense": 1,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
 
         ]
 
