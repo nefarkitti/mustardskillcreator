@@ -1280,6 +1280,9 @@
 
         "region": "MISC",
 
+        "note": "My friend 'Violet' was terrified of this thing. I don't know why.",
+        "behaviour":"It eats people. How fearsome!",
+
         "defense": 0.5,
         "dodge": 0,
 
