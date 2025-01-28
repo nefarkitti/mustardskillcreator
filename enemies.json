@@ -5,6 +5,9 @@
 
         "region": "BASE",
 
+        "note": "That's me!",
+        "behaviour": "Controlled by the player.",
+
         "defense": 0.8,
         "dodge": 0.1,
 
@@ -56,7 +59,7 @@
                     "turns": 0
                 },
 
-                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)"
+                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)\n1: +10 Base Damage\n2: Additional Type Damage (based on weapon)\n3: Hits an additional time. (If original target is dead, randomly selects one.)"
             },
 
             {
@@ -91,7 +94,7 @@
                     "turns": 0
                 },
 
-                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)"
+                "extra": ""
             }
 
         ]
@@ -103,6 +106,8 @@
         "name": "Burning Wizard",
 
         "region": "MISC",
+
+        "note":"Seems to constantly be ablaze no matter what.",
 
         "defense": 1.2,
         "dodge": 0,
@@ -594,7 +599,7 @@
                     "turns": 0
                 },
 
-                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)"
+                "extra": ""
             }
 
         ]
@@ -633,6 +638,8 @@
         "name": "Manager",
 
         "region": "PEPSI-CO",
+
+        "behaviour": "When in 'Overtime', uses new skills for the duration of the effect.",
 
         "defense": 0.8,
         "dodge": 0.15,
@@ -755,7 +762,7 @@
                     "turns": 0
                 },
             
-                "extra": "Raises self Attack Power by 0.2. Raises self Defense by 0.1. Small chance to apply 'Boredom'. Uses new skills for 3 turns (+1 per use)."
+                "extra": "Raises self Attack Power by 0.2. Raises self Defense by 0.1. Small chance to apply 'Boredom'. Enters 'Overtime' for 3 turns (+1 per use)."
             },
 
             {
@@ -790,7 +797,7 @@
                     "turns": 0
                 },
             
-                "extra": "Usable for X turns after 'Deep Dive'. Great chance to apply 'Boredom'. If missed, raise self Accuracy by 0.1. If dodged, reduce target's Dodge by 0.02. On hit, raise target's MINM Res. by 0.02."
+                "extra": "Usable when in 'Overtime'. Great chance to apply 'Boredom'. If missed, raise self Accuracy by 0.1. If dodged, reduce target's Dodge by 0.02. On hit, raise target's MINM Res. by 0.02."
             },
 
             {
@@ -825,7 +832,7 @@
                     "turns": 0
                 },
             
-                "extra": "Usable for X turns after 'Deep Dive'. Ignores target Defense."
+                "extra": "Usable when in 'Overtime'. Ignores target Defense."
             },
 
             {
@@ -859,7 +866,7 @@
                     "turns": 0
                 },
             
-                "extra": "Usable for X turns after 'Deep Dive'. Summons a weakened Pepsi-Co Employee (All TYPE Res. raised by 0.75, Defense set to 2, Health set to 75) (Max 1). If Pepsi-Co Employee is already on the field, use 'Leverage' instead."
+                "extra": "Usable when in 'Overtime'. Summons a weakened Pepsi-Co Employee (All TYPE Res. raised by 0.75, Defense set to 2, Health set to 75) (Max 1). If Pepsi-Co Employee is already on the field, use 'Leverage' instead."
             },
 
             {
@@ -906,6 +913,8 @@
 
         "region": "BASE",
 
+        "behaviour": "Always uses 'Warning Shot' as the first skill.",
+
         "defense": 1.1,
         "dodge": 0.3,
 
@@ -926,7 +935,7 @@
         "skills": [
 
             {
-                "name": "Warning shot",
+                "name": "Warning Shot",
 
                 "class":"ATTACK",
                 "spec":"absr",
@@ -957,7 +966,7 @@
                     "turns": 0
                 },
             
-                "extra": "Inflicts Wary (acc&atk down, dodge slightly up) guaranteed for 3 turns, always used on the first turn. Does not consume any of Lucia's ammo. "
+                "extra": "Inflicts Wary (acc&atk down, dodge slightly up) guaranteed for 3 turns. Does not consume any of Lucia's ammo. "
             },
 
             {
@@ -1681,6 +1690,176 @@
 
     {
 
+        "name": "Dead Rat",
+
+        "region": "RATS",
+
+        "note": "Ruined my Pepsi.",
+
+        "defense": 1.2,
+        "dodge": 0.3,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 0.8,
+        "swgeres": 0.2,
+        "sodares": 1.3,
+        "absrres": 0.5,
+        "minmres": 1,
+
+        "bleedres": 0.3,
+        "poisonres": 0.8,
+        "burnres": 0.6,
+
+        "skills": [
+
+            {
+                "name": "Scratch",
+
+                "class": "ATTACK",
+                "spec": "swge",
+
+                "basedamage": 10,
+                "accuracy": 0.9,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0.8,
+                "soda": 0,
+                "absr": 0.2,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 5,
+                    "turns": 5
+                },
+                "poisonApplication": {
+                    "potency": 10,
+                    "turns": 5
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": ""
+            },
+
+            {
+                "name": "Bite",
+
+                "class": "ATTACK",
+                "spec": "swge",
+
+                "basedamage": 20,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0.9,
+                "soda": 0,
+                "absr": 0.1,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 10,
+                    "turns": 3
+                },
+                "poisonApplication": {
+                    "potency": 20,
+                    "turns": 2
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": ""
+            },
+
+            {
+                "name": "Horde",
+
+                "class": "SUPPORT",
+
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 4,
+                "cooldown": 3,
+
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Summons a weakened 'Sewer Rat' if there are none in battle."
+            },
+
+            {
+                "name": "Contamination",
+
+                "class": "ATTACK",
+                "spec":"swge",
+
+                "basedamage": 25,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 4,
+                "cooldown": 3,
+
+                "corp": 0,
+                "swge": 1,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "If Allies are present, attack them instead. Otherrwise, attack Jane and modify this Skill to apply 20/5 Poison and 10/5 Bleed. If hit Ally, deal 50% less Base Damage and heal 10-15 HP."
+            }
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
@@ -1702,7 +1881,44 @@
         "poisonres": 1,
         "burnres": 1,
 
-        "skills": []
+        "skills": [
+
+            {
+                "name": "Attack",
+
+                "class": "ATTACK",
+                "spec": "",
+
+                "basedamage": 25,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "template"
+            }
+
+        ]
 
     }
 ]
