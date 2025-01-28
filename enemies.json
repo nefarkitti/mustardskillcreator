@@ -1484,7 +1484,7 @@
         "region": "SWORD DESCENT",
 
         "note": "nothing to say",
-        "behaviour":"Always uses 'Draw Blade' as the first skill. Crits deal 3x more damage instead of 2x. Uses 'Sword Descent Technique 3: Counter' every 3 turns. After recovering from Paralysis, recover 10 HP and set Defense back to 0.9 (+0.1 per recovery)",
+        "behaviour":"Always uses 'Draw Blade' as the first skill. Crits deal 3x more damage instead of 2x. Uses 'Sword Descent Technique 3: Take Your Bones' every 3 turns. After recovering from Paralysis, recover 10 HP and set Defense back to 0.9 (+0.1 per recovery)",
 
         "defense": 0.9,
         "dodge": 0.1,
