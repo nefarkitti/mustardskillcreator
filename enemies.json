@@ -1957,6 +1957,100 @@
 
     {
 
+        "name": "Pepsi Fanatic",
+
+        "region": "PEPSI-CO",
+
+        "defense": 1,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+        ]
+
+    },
+
+    {
+
+        "name": "King in Pepsi",
+
+        "region": "PEPSI-CO",
+
+        "note": "king",
+        "behaviour":"Once HP reaches below a certain threshold, enter 'Overtime' state permanently.",
+        "icon": "kingpepsi",
+
+        "defense": 0.8,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.2,
+        "critchance": 0.03,
+
+        "corpres": 0,
+        "swgeres": 0.8,
+        "sodares": 0.5,
+        "absrres": 1.5,
+        "minmres": 0.2,
+
+        "bleedres": 0.6,
+        "poisonres": 0.4,
+        "burnres": 0.2,
+
+        "skills": [
+
+            {
+                "name": "Corporate Greed",
+            
+                "basedamage": 12,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0.8,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0.2,
+            
+                "bleedApplication": {
+                    "potency": 5,
+                    "turns": 2
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "If Jane has >15 Copper, this attack does 50% less damage and takes 15 Copper from Jane. If Copper was taken, buffs self Attack Power by 0.15 and self Accuracy by 0.1. If in 'Overtime' state, also summon a weakened 'Pepsi-Co Employee'."
+            }
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
