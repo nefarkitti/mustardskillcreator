@@ -1864,6 +1864,74 @@
 
         "region": "MISC",
 
+        "behaviour": "Starting from the first turn, every 3 turns uses 'Gold! There's Gold!",
+
+        "defense": 1,
+        "dodge": 0,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+            {
+                "name": "Gold! There's Gold!",
+
+                "class": "SUPPORT",
+
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown":0,
+
+                "corp": 0,
+                "swge": 1,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "Turns 1-3 of Jane's Skills into Gold. Gold Skills cannot be used."
+            }
+
+        ]
+
+    },
+
+    {
+
+        "name": "Fortune Teller",
+
+        "region": "MISC",
+
+        "note": "Suddenly, one day, my stats had changed.",
+        "behaviour": "Cannot 'Murder', upon interaction assigns you a tarot card that will affect your stats. One-time use.",
+
         "defense": 1,
         "dodge": 0,
 
