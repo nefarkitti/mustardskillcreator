@@ -2015,6 +2015,9 @@
 
             {
                 "name": "Corporate Greed",
+
+                "class":"ATTACK",
+                "spec":"corp",
             
                 "basedamage": 12,
                 "accuracy": 1,
@@ -2042,7 +2045,74 @@
                     "turns": 0
                 },
             
-                "extra": "If Jane has >15 Copper, this attack does 50% less damage and takes 15 Copper from Jane. If Copper was taken, buffs self Attack Power by 0.15 and self Accuracy by 0.1. If in 'Overtime' state, also summon a weakened 'Pepsi-Co Employee'."
+                "extra": "If Jane has >15 Copper, this attack does 50% less damage and takes 15 Copper from Jane. If Copper was taken, buffs self Attack Power by 0.15 and self Accuracy by 0.1. If in 'Overtime' state, also summon a weakened 'Pepsi-Co Employee' (max 1)."
+            },
+
+            {
+                "name": "Rising Stocks",
+
+                "class":"ATTACK",
+                "spec":"minm",
+            
+                "basedamage": 10,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 1,
+                "cooldown": 1,
+            
+                "corp": 0.4,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0.6,
+            
+                "bleedApplication": {
+                    "potency": 4,
+                    "turns": 3
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Increase Stocks Stack by 1. Increase Base Damage by 5 for every Stocks Stack. If in 'Overtime' state, increase Base Damage by 7 instead."
+            },
+
+            {
+                "name": "Record Breaker",
+            
+                "basedamage": 25,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 1,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Usable at 4+ Stocks Stack. If in 'Overtime' state, becomes usable at 2+ Stocks Stack."
             }
 
         ]
