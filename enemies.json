@@ -2085,6 +2085,9 @@
 
             {
                 "name": "Record Breaker",
+
+                "class":"ATTACK",
+                "spec":"corp",
             
                 "basedamage": 25,
                 "accuracy": 1,
@@ -2113,6 +2116,72 @@
                 },
             
                 "extra": "Usable at 4+ Stocks Stack. If in 'Overtime' state, becomes usable at 2+ Stocks Stack."
+            },
+
+            {
+                "name": "Chains of Materialism",
+            
+                "basedamage": 20,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 2,
+                "revs": 0,
+                "cooldown": 0,
+            
+                "corp": 0.2,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0.8,
+            
+                "bleedApplication": {
+                    "potency": 8,
+                    "turns": 1
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "If in 'Overtime' state, attacks one more time. For every hit after the attack, raise the target's Defense by 0.05. High chance to inflict 'Boredom' on every hit."
+            },
+
+            {
+                "name": "Thou Wilt Sip",
+
+                "class":"SUPPORT",
+            
+                "basedamage": 0,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 2,
+                "revs": 3,
+                "cooldown": 3,
+            
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+            
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+            
+                "extra": "Only usable in 'Overtime' state. Recover 40% of Remaining HP. Healing above the 'Overtime' threshold does not get rid of the 'Overtime' state."
             }
 
         ]
