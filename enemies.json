@@ -341,9 +341,9 @@
 
     {
 
-        "name": "Pepsi-Co Employee",
+        "name": "Soda-Co Employee",
 
-        "region": "PEPSI-CO",
+        "region": "SODA-CO",
 
         "defense": 1.1,
         "dodge": 0,
@@ -608,7 +608,7 @@
 
     {
 
-        "name": "Pepsi-Ratt-o-tron",
+        "name": "Soda-Ratt-o-tron",
 
         "region": "RATS",
 
@@ -637,7 +637,7 @@
 
         "name": "Manager",
 
-        "region": "PEPSI-CO",
+        "region": "SODA-CO",
 
         "behaviour": "When in 'Overtime', uses new skills for the duration of the effect.",
 
@@ -866,7 +866,7 @@
                     "turns": 0
                 },
             
-                "extra": "Usable when in 'Overtime'. Summons a weakened Pepsi-Co Employee (All TYPE Res. raised by 0.75, Defense set to 2, Health set to 75) (Max 1). If Pepsi-Co Employee is already on the field, use 'Leverage' instead."
+                "extra": "Usable when in 'Overtime'. Summons a weakened Soda-Co Employee (All TYPE Res. raised by 0.75, Defense set to 2, Health set to 75) (Max 1). If Soda-Co Employee is already on the field, use 'Leverage' instead."
             },
 
             {
@@ -1488,213 +1488,11 @@
 
     {
 
-        "name": "Master Jim",
-
-        "region": "SWORD DESCENT",
-
-        "note": "nothing to say",
-        "behaviour":"Always uses 'Draw Blade' as the first skill. Crits deal 3x more damage instead of 2x. Uses 'Sword Descent Technique 3: Take Your Bones' every 3 turns. After recovering from Paralysis, recover 10 HP and set Defense back to 0.9 (+0.1 per recovery)",
-
-        "defense": 0.9,
-        "dodge": 0.1,
-
-        "attackpower": 1,
-        "accmod": 1.1,
-        "critchance": 0.05,
-
-        "corpres": 1,
-        "swgeres": 1,
-        "sodares": 1,
-        "absrres": 1,
-        "minmres": 1,
-
-        "bleedres": 1,
-        "poisonres": 1,
-        "burnres": 1,
-
-        "skills": [
-
-            {
-                "name": "Draw Blade",
-
-                "class":"ATTACK",
-                "spec":"soda",
-            
-                "basedamage": 25,
-                "accuracy": 1.2,
-                "targets": 1,
-                "multihit": 1,
-                "revs": 0,
-                "cooldown": 0,
-            
-                "corp": 0,
-                "swge": 0,
-                "soda": 1,
-                "absr": 0,
-                "minm": 0,
-            
-                "bleedApplication": {
-                    "potency": 10,
-                    "turns": 2
-                },
-                "poisonApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "burnApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-            
-                "extra": "Raise Base Damage by 5 for every 10 Bleed Potency on target."
-            },
-
-            {
-                "name": "Sword Descent Technique 1: Puncture",
-
-                "class":"ATTACK",
-                "spec":"soda",
-            
-                "basedamage": 40,
-                "accuracy": 1.1,
-                "targets": 1,
-                "multihit": 1,
-                "revs": 0,
-                "cooldown": 0,
-            
-                "corp": 0,
-                "swge": 0,
-                "soda": 0.55,
-                "absr": 0.45,
-                "minm": 0,
-            
-                "bleedApplication": {
-                    "potency": 20,
-                    "turns": 2
-                },
-                "poisonApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "burnApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-            
-                "extra": "Increase Crit Chance of this skill by 0.04 for every 8 Bleed Potency on target."
-            },
-
-            {
-                "name": "Sword Descent Technique 2: Slay",
-
-                "class":"ATTACK",
-            
-                "basedamage": 30,
-                "accuracy": 1,
-                "targets": 1,
-                "multihit": 1,
-                "revs": 1,
-                "cooldown": 1,
-            
-                "corp": 0,
-                "swge": 0,
-                "soda": 0,
-                "absr": 0,
-                "minm": 0,
-            
-                "bleedApplication": {
-                    "potency": 8,
-                    "turns": 3
-                },
-                "poisonApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "burnApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-            
-                "extra": "Raises target's Defense by 0.2 for this Skill."
-            },
-
-            {
-                "name": "Sword Descent Technique 3: Take Your Bones",
-
-                "class":"SUPPORT",
-            
-                "basedamage": 0,
-                "accuracy": 1,
-                "targets": 1,
-                "multihit": 1,
-                "revs": 0,
-                "cooldown": 0,
-            
-                "corp": 0,
-                "swge": 0,
-                "soda": 0,
-                "absr": 0,
-                "minm": 0,
-            
-                "bleedApplication": {
-                    "potency": 8,
-                    "turns": 3
-                },
-                "poisonApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "burnApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-            
-                "extra": "If hit during this turn, use 'Sanguine Floret Blossom' next turn."
-            },
-
-            {
-                "name": "Sanguine Floret Blossom",
-            
-                "basedamage": 70,
-                "accuracy": 1,
-                "targets": 1,
-                "multihit": 1,
-                "revs": 0,
-                "cooldown": 0,
-            
-                "corp": 0,
-                "swge": 0,
-                "soda": 0,
-                "absr": 0,
-                "minm": 0,
-            
-                "bleedApplication": {
-                    "potency": 12,
-                    "turns": 3
-                },
-                "poisonApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-                "burnApplication": {
-                    "potency": 0,
-                    "turns": 0
-                },
-            
-                "extra": "This Skill cannot Crit. Raise target's Defense by 0.1 for this Skill. Become Paralysed and set self Defense to 0.5 for a turn after this Skill. If there are 'Sword Descent' Allies, raise their Attack Power by 0.25."
-            }
-
-        ]
-
-    },
-
-    {
-
         "name": "Dead Rat",
 
         "region": "RATS",
 
-        "note": "Ruined my Pepsi.",
+        "note": "Ruined my Soda.",
 
         "defense": 1.2,
         "dodge": 0.3,
@@ -1957,9 +1755,9 @@
 
     {
 
-        "name": "Pepsi Fanatic",
+        "name": "Soda Fanatic",
 
-        "region": "PEPSI-CO",
+        "region": "SODA-CO",
 
         "defense": 1,
         "dodge": 0,
@@ -1986,13 +1784,13 @@
 
     {
 
-        "name": "King in Pepsi",
+        "name": "King in Soda",
 
-        "region": "PEPSI-CO",
+        "region": "SODA-CO",
 
         "note": "king",
         "behaviour":"Once HP reaches below a certain threshold, enter 'Overtime' state permanently.",
-        "icon": "kingpepsi",
+        "icon": "kingSoda",
 
         "defense": 0.8,
         "dodge": 0.1,
@@ -2045,7 +1843,7 @@
                     "turns": 0
                 },
             
-                "extra": "If Jane has >15 Copper, this attack does 50% less damage and takes 15 Copper from Jane. If Copper was taken, buffs self Attack Power by 0.15 and self Accuracy by 0.1. If in 'Overtime' state, also summon a weakened 'Pepsi-Co Employee' (max 1)."
+                "extra": "If Jane has >15 Copper, this attack does 50% less damage and takes 15 Copper from Jane. If Copper was taken, buffs self Attack Power by 0.15 and self Accuracy by 0.1. If in 'Overtime' state, also summon a weakened 'Soda-Co Employee' (max 1)."
             },
 
             {
@@ -2190,6 +1988,35 @@
 
     {
 
+        "name": "Dante",
+
+        "region": "MISC",
+
+        "defense": 0.8,
+        "dodge": 0.4,
+
+        "attackpower": 1,
+        "accmod": 1.5,
+        "critchance": 0.08,
+
+        "corpres": 1.5,
+        "swgeres": 0.5,
+        "sodares": 0.5,
+        "absrres": 0,
+        "minmres": 1.5,
+
+        "bleedres": 0.2,
+        "poisonres": 0.5,
+        "burnres": 0.6,
+
+        "skills": [
+
+        ]
+
+    },
+
+    {
+
         "name": "Test Dummy",
 
         "region": "MISC",
@@ -2212,6 +2039,40 @@
         "burnres": 1,
 
         "skills": [
+
+        ]
+
+    },
+
+    {
+
+        "name": "Sword Master Jim",
+
+        "region": "SWORD DESCENT",
+
+        "note": "nothing to say",
+        "behaviour":"Always uses 'Draw Blade' as the first skill. Crits deal 3x more damage instead of 2x. Uses 'Sword Descent Technique 3: Take Your Bones' every 3 turns. After recovering from Paralysis, recover 10 HP and set Defense back to 0.9 (+0.1 per recovery)",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
 
         ]
 

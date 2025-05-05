@@ -1,0 +1,647 @@
+[
+    {
+
+        "name": "Jane",
+
+        "region": "BASE",
+
+        "note": "That's me!",
+        "behaviour": "Controlled by the player.",
+
+        "defense": 0.8,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1,
+        "critchance": 0.04,
+
+        "corpres": 1.75,
+        "swgeres": 1,
+        "sodares": 0.4,
+        "absrres": 0.6,
+        "minmres": 1.5,
+
+        "bleedres": 0.9,
+        "poisonres": 1,
+        "burnres": 0.8,
+
+        "skills": [
+
+            {
+                "name": "Attack",
+
+                "class": "ATTACK",
+                "spec": "",
+
+                "basedamage": 25,
+                "accuracy": 1,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0,
+                "soda": 0,
+                "absr": 0,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": "3 different attacks based on the amount of 'Rev Up' used (max 3)\n1: +10 Base Damage\n2: Additional Type Damage (based on weapon)\n3: Hits an additional time. (If original target is dead, randomly selects one.)"
+            },
+
+            {
+                "name": "Rat Poison",
+
+                "class": "ATTACK",
+                "spec": "soda",
+
+                "basedamage": 5,
+                "accuracy": 0.75,
+                "targets": 1,
+                "multihit": 1,
+                "revs": 0,
+                "cooldown": 0,
+
+                "corp": 0,
+                "swge": 0.1,
+                "soda": 1,
+                "absr": 0.5,
+                "minm": 0,
+
+                "bleedApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+                "poisonApplication": {
+                    "potency": 10,
+                    "turns": 3
+                },
+                "burnApplication": {
+                    "potency": 0,
+                    "turns": 0
+                },
+
+                "extra": ""
+            }
+
+        ]
+
+    },
+
+    {
+
+        "name": "Lucia",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Sword Master Jim",
+
+        "region": "SWORD DESCENT",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Windedge Timothy",
+
+        "region": "SWORD DESCENT",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Manager",
+
+        "region": "SODA Co",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "King in Soda",
+
+        "region": "SODA Co",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Hopper",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Builder Guy",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Genesis Sage",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Resept Chyonist",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Undescript Vendor",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Dr. Micegal",
+
+        "region": "RATS",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Burning Wizard",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "YoungBeard",
+
+        "region": "BEARD PIRATES",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "LackBeard",
+
+        "region": "BEARD PIRATES",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "VELVET",
+
+        "region": "VELVET",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Dante",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    }
+]

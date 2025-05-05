@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(237, 237, 237);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section {
+
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid rgb(177, 177, 177);
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(135, 135, 135);
+
+    height: fit-content;
+
+}
+.vs {
+    font-weight: 900;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+.section .title {
+    font-style: italic;
+    font-weight: 900;
+    filter: opacity(25%);
+    margin-bottom: 5px;
+}
+
+select {
+    margin-bottom: 3px;
+}
