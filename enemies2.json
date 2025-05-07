@@ -10,6 +10,7 @@
 
         "pronouns": "she/her",
         "preference": "wlw",
+        "relationship": "single",
 
         "defense": 0.8,
         "dodge": 0.1,
@@ -115,6 +116,7 @@
 
         "pronouns": "she/her",
         "preference": "wlw",
+        "relationship": "single",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -152,6 +154,7 @@
 
         "pronouns": "he/him",
         "preference": "mlm",
+        "relationship": "taken by Rodrick",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -189,6 +192,7 @@
 
         "pronouns": "he/them",
         "preference": "mlm",
+        "relationship": "single",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -226,6 +230,7 @@
 
         "pronouns": "she/her",
         "preference": "het",
+        "relationship": "single",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -263,6 +268,7 @@
 
         "pronouns": "any",
         "preference": "pan",
+        "relationship": "single",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -300,6 +306,7 @@
 
         "pronouns": "they/them",
         "preference": "hopper",
+        "relationship": "hopper",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -337,6 +344,7 @@
 
         "pronouns": "he/they",
         "preference": "BuIlding",
+        "relationship": "Bricks",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -374,6 +382,7 @@
 
         "pronouns": "they/them",
         "preference": "omni",
+        "relationship": "builder guy....",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -411,6 +420,7 @@
 
         "pronouns": "she/her",
         "preference": "pan",
+        "relationship": "taken by Undescript Vendor",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -448,6 +458,7 @@
 
         "pronouns": "she/they",
         "preference": "wlw",
+        "relationship": "taken by Resept Chyonist",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -485,6 +496,7 @@
 
         "pronouns": "she/her",
         "preference": "wlw",
+        "relationship": "mice",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -522,6 +534,7 @@
 
         "pronouns": "burning/wizard",
         "preference": "fire",
+        "relationship": "burning alive",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -559,6 +572,7 @@
 
         "pronouns": "he/him",
         "preference": "yarrrghhh",
+        "relationship": "the open sea",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -596,6 +610,7 @@
 
         "pronouns": "he/him",
         "preference": "yarrrghhh",
+        "relationship": "treasure",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -628,11 +643,12 @@
 
         "region": "VELVET",
 
-        "note": "nothing to say",
+        "note": "?",
         "behaviour":"",
 
         "pronouns": "he/him",
         "preference": "?",
+        "relationship": "?",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -670,6 +686,7 @@
 
         "pronouns": "devil/maycry",
         "preference": "dude is that dante from devil may cry",
+        "relationship": "devils that cry",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -707,6 +724,7 @@
 
         "pronouns": "she/it",
         "preference": "wlw",
+        "relationship": "single",
 
         "defense": 0.9,
         "dodge": 0.1,
