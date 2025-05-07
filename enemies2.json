@@ -8,6 +8,9 @@
         "note": "That's me!",
         "behaviour": "Controlled by the player.",
 
+        "pronouns": "she/her",
+        "preference": "wlw",
+
         "defense": 0.8,
         "dodge": 0.1,
 
@@ -105,10 +108,13 @@
 
         "name": "Lucia",
 
-        "region": "MISC",
+        "region": "BASE",
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "she/her",
+        "preference": "wlw",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -144,6 +150,9 @@
         "note": "The leader of the sword descent, also the Venomshank, whatever that means. Despite wielding the power of poison in his brain, he seems to be quite the welcoming spirit, should you not be his opponent.",
         "behaviour":"",
 
+        "pronouns": "he/him",
+        "preference": "mlm",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -177,6 +186,9 @@
 
         "note": "The Windforce of the sword descent, and Jim's right hand man. A rigid, respectable and grounded fellow. He seems to make a big deal out of having the windforce be stabbed the other side from the heart.",
         "behaviour":"",
+
+        "pronouns": "he/them",
+        "preference": "mlm",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -212,6 +224,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "she/her",
+        "preference": "het",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -245,6 +260,9 @@
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "any",
+        "preference": "pan",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -280,6 +298,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "they/them",
+        "preference": "hopper",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -313,6 +334,9 @@
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "he/they",
+        "preference": "BuIlding",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -348,6 +372,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "they/them",
+        "preference": "omni",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -381,6 +408,9 @@
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "she/her",
+        "preference": "pan",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -416,6 +446,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "she/they",
+        "preference": "wlw",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -449,6 +482,9 @@
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "she/her",
+        "preference": "wlw",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -484,6 +520,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "burning/wizard",
+        "preference": "fire",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -517,6 +556,9 @@
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "he/him",
+        "preference": "yarrrghhh",
 
         "defense": 0.9,
         "dodge": 0.1,
@@ -552,6 +594,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "he/him",
+        "preference": "yarrrghhh",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -586,6 +631,9 @@
         "note": "nothing to say",
         "behaviour":"",
 
+        "pronouns": "he/him",
+        "preference": "?",
+
         "defense": 0.9,
         "dodge": 0.1,
 
@@ -619,6 +667,46 @@
 
         "note": "nothing to say",
         "behaviour":"",
+
+        "pronouns": "devil/maycry",
+        "preference": "dude is that dante from devil may cry",
+
+        "defense": 0.9,
+        "dodge": 0.1,
+
+        "attackpower": 1,
+        "accmod": 1.1,
+        "critchance": 0.05,
+
+        "corpres": 1,
+        "swgeres": 1,
+        "sodares": 1,
+        "absrres": 1,
+        "minmres": 1,
+
+        "bleedres": 1,
+        "poisonres": 1,
+        "burnres": 1,
+
+        "skills": [
+
+           
+
+        ]
+
+    },
+
+    {
+
+        "name": "Florist",
+
+        "region": "MISC",
+
+        "note": "nothing to say",
+        "behaviour":"",
+
+        "pronouns": "she/it",
+        "preference": "wlw",
 
         "defense": 0.9,
         "dodge": 0.1,
