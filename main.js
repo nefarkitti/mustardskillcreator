@@ -429,8 +429,6 @@ function calculate() {
 function createClipboardJSON() {
 
     let json = `
-\`\`\`json
-
 {
     "name": "${skillName.value}",
 
@@ -461,10 +459,7 @@ function createClipboardJSON() {
     },
 
     "extra": "${extra.value}"
-},
-
-\`\`\`
-`
+}`
 
     navigator.clipboard.writeText(json)
 
