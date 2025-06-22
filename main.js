@@ -458,7 +458,7 @@ function createClipboardJSON() {
         "turns": ${burntrn.value}
     },
 
-    "extra": "${extra.value}"
+    "extra": "${extra.value.trim()}"
 }`
 
     navigator.clipboard.writeText(json)
